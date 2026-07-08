@@ -9,7 +9,7 @@ Created by Yi (Amy) Sui and Alex Kwan under the supervision of Professor Scott S
 Updated in 2025 by Fabian Corbin for `piccard`.
 
 ## Related article
-The package implements the Bayesian Motifs in the article ...
+The package implements the Bayesian Motifs in [this article](https://www.researchgate.net/publication/383200494_Bayesian_network_Motifs_for_reasoning_over_heterogeneous_unlinked_datasets).
 
 Use cases in this article are implemented in [experiments](https://github.com/D3Mlab/ppandas/tree/master/experiments).
 
