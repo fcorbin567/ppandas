@@ -19,7 +19,7 @@ mccabe==0.6.1
 mkl-fft==1.0.15
 mkl-random==1.1.0
 mkl-service==2.3.0
-networkx==2.4
+networkx>=2.6
 numpy==1.16.5
 pandas==0.24.2
 pgmpy==0.1.9
