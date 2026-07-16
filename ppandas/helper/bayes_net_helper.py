@@ -227,7 +227,12 @@ class BayesNetHelper():
             for dependent_var in dependent_vars:
                 model.add_edge(independent_var, dependent_var)
 
-        model.fit(df, estimator=BayesianEstimator(model=model, data=df))
+        # Initialize BayesianEstimator with model and data
+        estimator = BayesianEstimator(model, df)
+        # Get the CPDs using Bayesian estimation
+        bayesian_cpds = estimator.get_parameters()
+        # Add the CPDs to the model
+        model.add_cpds(*bayesian_cpds)
 
         # Manually add CPDs for any independent vars that are missing
         for var in independent_vars:
